@@ -1,0 +1,22 @@
+<%- include("partials/header.ejs")%>
+</body>
+<main>
+<div class="feedback">
+    <h2 style="color: black;"><%=feed%></h2>
+    <form action="/submit-feedback" method="post">
+        <label style="margin-left: 4%;" for="name">Name:</label>
+        <input style="color: black;" type="text" name="name" autocomplete="off" placeholder="Enter your name" required><br>
+        <br>
+        <label style="margin-left: 4%;"for="email">Email:</label>
+        <input style="color: black;"type="email" name="email" autocomplete="off" placeholder="Enter your Email" required><br>
+        <br>
+        <label style="margin-left: 4%;">Feedback:</label>
+        <label id="areatext" for="feedback"></label>
+        <br>
+        <textarea style="color:aliceblue;background-color: black;" name="feedback" autocomplete="off" placeholder="Please provide your feedback!!" required rows="10" cols="50"></textarea>
+    
+        <input style="margin-left: 4%;color:black" type="submit" value="Submit">
+    </form>
+    </div>
+    </main>
+</html>
